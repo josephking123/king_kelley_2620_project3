@@ -30,13 +30,13 @@ public class FamilyMember {
         this.spouse = s;
     }
 
-    public String getBirthday() {
-        return birthday;
-    }
-
     public String getName() {
         return name;
     }
+
+    public String getBirthday() {
+        return birthday;
+    }    
 
     public ArrayList<FamilyMember> getParents() {
         return parents;
@@ -47,7 +47,14 @@ public class FamilyMember {
     }
 
     public FamilyMember getSpouse() {
-        return spouse;
+        if(this.spouse == null){
+            System.out.println("This FamilyMember has no spouse.");
+            return null;
+        }
+        else{
+            return spouse;
+        }
+        
     }
 
 }
