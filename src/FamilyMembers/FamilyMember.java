@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class FamilyMember {
+public abstract class FamilyMember {
 
     private String name;
     private String birthday;
@@ -56,5 +56,7 @@ public class FamilyMember {
         }
         
     }
+
+    public abstract String getInfo();
 
 }

@@ -7,7 +7,7 @@ public class Living extends FamilyMember{
         this.residence = r;
     }
 
-    public String getResidence() {
+    public String getInfo() {
         return this.residence;
     }
     

@@ -7,7 +7,7 @@ public class Deceased extends FamilyMember{
         this.dod = d;
     }
 
-    public String getDOD() {
+    public String getInfo() {
         return dod;
     }
 
