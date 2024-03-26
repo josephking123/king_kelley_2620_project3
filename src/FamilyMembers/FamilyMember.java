@@ -11,6 +11,8 @@ public abstract class FamilyMember {
     public FamilyMember(String n, String bd){
         this.name = n;
         this.birthday = bd;
+        this.parents = new ArrayList<FamilyMember>();
+        this.children = new ArrayList<FamilyMember>();
     }
 
     public void addParent(FamilyMember p){
