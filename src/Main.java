@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        File file = new File("src/input.txt");
+        File file = new File("lib/input.txt");
         try{
             Scanner scanner = new Scanner(file);
             ArrayList<FamilyMember> people = new ArrayList<FamilyMember>();
