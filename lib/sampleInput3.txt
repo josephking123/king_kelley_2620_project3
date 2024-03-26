@@ -1,0 +1,12 @@
+Fanny Mae, 2 9 1957, 12 5 2011
+Benny Mae, 7 3 1951, 9 10 2011
+Sally Mae, 3 15 1978, Pine Plains, NY
+Bobby Jims, 10 10 1980, Poughkeepsie, NY
+Sally Cee, 9 25 2019, Atlanta, GA
+
+Fanny Mae, marriedto, Benny Mae
+Benny Mae, parentof, Sally Mae
+Benny Mae, parentof, Bobby Jims
+Fanny Mae, parentof, Sally Mae
+Fanny Mae, parentof, Bobby Jims
+Sally Cee, marriedto, Bobby Jims
