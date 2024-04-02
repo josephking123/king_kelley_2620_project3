@@ -1,3 +1,5 @@
-public class FamilyTree{
+package FamilyTree;
 
+public class FamilyTree{
+       
 }
