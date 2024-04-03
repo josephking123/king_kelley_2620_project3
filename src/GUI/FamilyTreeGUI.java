@@ -2,13 +2,14 @@ import javax.swing.*;
 import java.awt.*;
 
 public class FamilyTreeGUI extends JFrame {
+    @SuppressWarnings("unused")
     private FamilyTreeController controller;
 
     private JPanel treePanel;
     private JTree tree;
 
     public FamilyTreeGUI() {
-        setTitle("Family Tree Viewer");
+        setTitle("Family Tree");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(800, 600);
 

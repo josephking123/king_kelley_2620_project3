@@ -1,3 +1,5 @@
+package FamilyMembers;
+
 public class Living extends FamilyMember{
 
     private String residence;

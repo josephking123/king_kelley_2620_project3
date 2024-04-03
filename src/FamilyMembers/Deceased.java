@@ -1,3 +1,5 @@
+package FamilyMembers;
+
 public class Deceased extends FamilyMember{
 
     private String dod;

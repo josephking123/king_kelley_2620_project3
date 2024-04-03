@@ -1,5 +1,7 @@
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
+import FamilyMembers.FamilyMember;
+
 import java.util.ArrayList;
 
 public class FamilyTreeController {
