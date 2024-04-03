@@ -62,5 +62,4 @@ public abstract class FamilyMember {
     }
 
     public abstract String getInfo();
-
 }
