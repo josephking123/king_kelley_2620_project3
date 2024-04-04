@@ -13,5 +13,4 @@ public class Deceased extends FamilyMember{
     public String getInfo() {
         return dod;
     }
-
 }

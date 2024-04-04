@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             try {
-                ArrayList<FamilyMember> people = FileReader.readInputFile("lib\\sampleInput1.txt");
+                ArrayList<FamilyMember> people = FileReader.readInputFile("lib\\sampleInput2.txt");
                 FamilyTreeGUI gui = new FamilyTreeGUI(people);
                 gui.setVisible(true);
 
