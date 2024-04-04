@@ -9,6 +9,7 @@ public class Living extends FamilyMember{
         this.residence = r;
     }
 
+    @Override
     public String getInfo() {
         return this.residence;
     }

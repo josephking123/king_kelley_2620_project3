@@ -9,6 +9,7 @@ public class Deceased extends FamilyMember{
         this.dod = d;
     }
 
+    @Override
     public String getInfo() {
         return dod;
     }

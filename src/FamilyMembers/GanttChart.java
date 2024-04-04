@@ -27,6 +27,7 @@ public class GanttChart {
         TaskSeries series = new TaskSeries("Family Members");
 
         for (FamilyMember member : familyMembers) {
+            try {
             Date birthDate = parseDate(member.getBirthday());
             Task task;
             if (member instanceof Living) {
@@ -38,7 +39,10 @@ public class GanttChart {
                 continue;
             }
             series.add(task);
+        } catch (IllegalArgumentException e){
+            System.err.println("Error creating task for " + member.getName() + ": " + e.getMessage());
         }
+    }
 
         TaskSeriesCollection dataset = new TaskSeriesCollection();
         dataset.add(series);
@@ -58,7 +62,8 @@ public class GanttChart {
         );
     }
 
-    private static void displayChart(JFreeChart chart) {
+
+        private static void displayChart(JFreeChart chart) {
         SwingUtilities.invokeLater(() -> {
             JFrame frame = new JFrame("Gantt Chart");
             frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
