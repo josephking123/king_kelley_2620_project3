@@ -30,7 +30,7 @@ public class FamilyTreeGUI extends JFrame {
 
             FamilyMember spouse = member.getSpouse();
             if (spouse != null) {
-                DefaultMutableTreeNode spouseNode = new DefaultMutableTreeNode(buildLabel(spouse, "Spouse"));
+                DefaultMutableTreeNode spouseNode = new DefaultMutableTreeNode(buildLabelName(spouse, "Spouse"));
                 memberNode.add(spouseNode);
             }
 
@@ -38,7 +38,7 @@ public class FamilyTreeGUI extends JFrame {
             if (!parents.isEmpty()) {
                 DefaultMutableTreeNode parentsNode = new DefaultMutableTreeNode("Parents");
                 for (FamilyMember parent : parents) {
-                    DefaultMutableTreeNode parentNode = new DefaultMutableTreeNode(buildLabel(parent, "Parent"));
+                    DefaultMutableTreeNode parentNode = new DefaultMutableTreeNode(buildLabelName(parent, "Parent"));
                     parentsNode.add(parentNode);
                 }
                 memberNode.add(parentsNode);
@@ -48,7 +48,7 @@ public class FamilyTreeGUI extends JFrame {
             if (!children.isEmpty()) {
                 DefaultMutableTreeNode childrenNode = new DefaultMutableTreeNode("Children");
                 for (FamilyMember child : children) {
-                    DefaultMutableTreeNode childNode = new DefaultMutableTreeNode(buildLabel(child, "Child"));
+                    DefaultMutableTreeNode childNode = new DefaultMutableTreeNode(buildLabelName(child, "Child"));
                     childrenNode.add(childNode);
                 }
                 memberNode.add(childrenNode);
@@ -71,7 +71,7 @@ public class FamilyTreeGUI extends JFrame {
         return labelBuilder.toString();
     }
 
-    private String buildLabel(FamilyMember member, String relationship) {
+    private String buildLabelName(FamilyMember member, String relationship) {
         return relationship + ": " + buildLabel(member);
     }
 }
